@@ -1,0 +1,22 @@
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(45deg, #6f71df, #442fdf);
+      }
+      25% {
+        background: linear-gradient(45deg, #6b55e6, #272ae0);
+      }
+      50% {
+        background: linear-gradient(45deg, #3e37f0, #b6bdec);
+      }
+      75% {
+        background: linear-gradient(45deg, #6c70b3, #594a94);
+      }
+      100% {
+        background: linear-gradient(45deg, #7e7edc, #e0b5d9);
+      }
+  }
+  
+  .gradient-animation {
+    animation: changeGradient 2s linear infinite ;
+  }
+  
