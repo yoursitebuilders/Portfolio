@@ -7,7 +7,7 @@ import OwerView from './components/OwerView';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-black ">
       <Navbar/>
       <Hero/>
       <OwerView/>

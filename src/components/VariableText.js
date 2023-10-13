@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const TypingErasingText = (text) => {
+const TypingErasingText = ({text}) => {
  
   const [displayText, setDisplayText] = useState('');
   
@@ -37,7 +37,7 @@ const TypingErasingText = (text) => {
 
   return (
     <div>
-      <p>{displayText}</p>
+      <p className='text-[60px]'>{displayText}</p>
     </div>
   );
 };
