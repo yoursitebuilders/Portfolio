@@ -37,7 +37,7 @@ const TypingErasingText = ({text}) => {
 
   return (
     <div>
-      <p className='text-[60px]'>{displayText}</p>
+      <p className='text-[50px]  '>{displayText}</p>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import HeroBg from './HeroBg'
 const Hero = () => {
 
  
-const text=" Remember  tlearTimeout"
+ const text="Crafting Digital Identities, One Website at a Time"
     
   
 
@@ -36,32 +36,24 @@ const text=" Remember  tlearTimeout"
 
     <div className=' flex h-[200vh] z-20 bg-transparent w-[80%] flex-col justify-between m-auto'>
     {/* left */}
-    <div className='flex  flex-col justify-between gap-3  w-[100%] h-[100vh]   py-[100px]' >
+    <div className='flex  flex-col justify-around w-[100%] h-[100vh]   py-[100px]' >
 
-    <div className='flex mx-auto w-[90%] h-[100px]  '>
-        <div className=' z-30 font-bold text-violet-600 h-[100px] justify-start flex text-[40px]'>
-
-      
-      <VariableText   text={text} />
-
-
-      </div>
-    </div>
+   
 
     {/* for cursive test */}
 
     <div className='text-purple-500 z-30 text-[40px] italic font-medium'>
 
-    Remember to clear the timeout using clearTimeout
+    Want websites according to your custom needs then you are at right destination
     </div>
 
     
 
       <div className='justify-start flex'>
 
-      <div className='font-serif z-30 leading-10  justify-start flex p-3 text-[30px] text-start text-gray-400'>
+      <div className='font-serif z-30 leading-10 text-center border-[2px] border-gray-400 justify-start flex p-3 text-[20px] text-white'>
 
-      Remember to clear the timeout using clearTimeout when the component unmounts or if you want to cancel it for some reason. This is essential to prevent memory leaks and unexpected behavior
+      We specialize in creating custom-designed, responsive websites tailored to meet your unique business requirements. Our team of experienced developers is dedicated to delivering user-friendly, visually appealing websites that reflect your brand's essence.
       </div>
 
       </div>
@@ -77,7 +69,7 @@ const text=" Remember  tlearTimeout"
     {/* <Video/> */}
 
     <video
-            className="rounded-[10px]  shadow-[20px_20px_rgba(255,255,255)]"
+            className="rounded-[10px]  shadow-[20px_20px_rgba(120, 120, 120)]"
             muted
             loop
             style={{ width: '100%', height: 'auto' }}
