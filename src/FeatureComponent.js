@@ -1,14 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
 import CertificateLogo from './components/certificate.png';
-import fast from './components/quick.png'
-import price from './components/tags.png'
-import updates from './components/loading-arrow.png'
-import flexi from './components/flexibility.png'
-import production from './components/deployment.png'
-
-
-
+import fast from './components/quick.png';
+import price from './components/tags.png';
+import updates from './components/loading-arrow.png';
+import flexi from './components/flexibility.png';
+import production from './components/deployment.png';
 
 const FeatureComponent = () => {
   const featureData = [
@@ -45,68 +40,21 @@ const FeatureComponent = () => {
   ];
 
   return (
-    <FeatureContainer>
-      <FeatureHeader>Why you'll love us</FeatureHeader>
-      <Features>
+    <div className="bg-black text-gray-300 p-20 mx-5">
+      <h2 className="text-white text-center text-5xl mb-10">Why you'll love us</h2>
+      <div className="flex flex-wrap">
         {featureData.map((item, index) => (
-          <FeatureItem key={index}>
-            <Logo src={item.logo} alt={`Logo${index + 1}`} />
-            <FeatureTitle>{item.title}</FeatureTitle>
-            <FeatureDescription>{item.description}</FeatureDescription>
-          </FeatureItem>
+          <div key={index} className="w-1/2 p-5">
+            <div className="border border-white rounded-lg h-full p-5 flex flex-col items-center">
+              <img src={item.logo} alt={`Logo${index + 1}`} className="w-10 h-10 mb-3" />
+              <h3 className="text-purple-600 text-lg font-bold mb-2">{item.title}</h3>
+              <p className="text-base">{item.description}</p>
+            </div>
+          </div>
         ))}
-      </Features>
-    </FeatureContainer>
+      </div>
+    </div>
   );
 };
-
-const FeatureContainer = styled.div`
-  background: black;
-  color: grey;
-  padding: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-`;
-
-const FeatureHeader = styled.h2`
-    color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  font-size: 60px;
-  margin-bottom: 5%;
-`;
-const Logo = styled.img`
-  max-width: 50px;
-  max-height: 50px;
-  margin-bottom: 10px;
-  
-  
-
-`;
-const Features = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
-
-const FeatureItem = styled.div`
-  width: 45%;
-  margin-bottom: 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 10px;
-`;
-
-const FeatureTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: purple;
-  font-weight: bold;
-`;
-
-const FeatureDescription = styled.p`
-  font-size: 1rem;
-`;
 
 export default FeatureComponent;
