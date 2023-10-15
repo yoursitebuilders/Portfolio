@@ -47,7 +47,7 @@ export default () => {
       freeMode={true}
       // autoplay={true}
       autoplay={{
-        delay: 1000,
+        delay: 100,
         disableOnInteraction: false,
       }}
       navigation
