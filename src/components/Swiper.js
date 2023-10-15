@@ -3,8 +3,8 @@ import { Navigation, Pagination, Autoplay, FreeMode, Scrollbar, A11y } from 'swi
 import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
-import img4 from './img4.jpg';
-import img5 from './img5.png';
+import img4 from './img4.png';
+// import img5 from './img5.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -57,34 +57,44 @@ export default () => {
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387034/medical1_lhrswt.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387151/restourant_v7vsgo.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387138/tourism_j6jjb0.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387404/edtech_xxifcw.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387034/medical1_lhrswt.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387151/restourant_v7vsgo.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387138/tourism_j6jjb0.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387404/edtech_xxifcw.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+        </a>
       </SwiperSlide>
     </Swiper>
   );
