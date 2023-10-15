@@ -1,106 +1,4 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-
-const FooterContainer = styled.footer`
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.9108893557422969) 0%, rgba(66,63,63,0.9108893557422969) 0%, rgba(32,31,31,1) 0%, rgba(0,0,0,1) 98%, rgba(0,0,0,0.9108893557422969) 100%);
-  color: #fff;
-  padding: 20px 0;
- display: flex;
- justify-content: center;
- 
-`;
-
-const AboutUs = styled.div`
-  h3 {
-    font-size: 3rem;
-   //background-color: #ae00ff;
-   border: 3px solid grey;
-  border-radius: 20px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    margin-top:3%;
-    margin-bottom: 3%;
-       
-  }
-  p {
-    font-size: 1.5rem;
-    color: gray;
-    font-weight: bold;
-    padding-left:5%;
-  padding-right:5%;
-  margin-bottom: 3%;
-  }
-`;
-
-const ContactForm = styled.div`
-
-  h3 {
-    font-size: 1.5rem;
-    color: black;
-    display:flex;
-     flex-direction:column;
-
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 700px;
-    margin: 0 auto;
-    color:black;
-    
-    input,
-    textarea {
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #777;
-      border-radius: 4x;
-      font-size: 1rem;
-    }
-    button {
-      background-color:  #ae00ff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-  }
-`;
-
-const ContactInfo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center; // Spread items horizontally
-  margin-top: 20px;
-h3{
-  font-size:1.5rem;
-  border: 3px solid grey;
-  border-radius: 10px;
-  margin-bottom: 3%;
-  margin-top:3% ;
-}
-  a {
-   
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    font-size: large;
-    margin-bottom: 5%;
-
-    img {
-      margin-right: 5px;
-      width: 20px;
-      height: 20px;
-    }
-  }
-`;
+import { useState } from 'react';
 
 function Footer() {
   const [name, setName] = useState('');
@@ -120,35 +18,31 @@ function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send the data to your server).
-    // You can use Axios, Fetch, or any other library to make an HTTP request.
-
     console.log('Name: ', name);
     console.log('Email: ', email);
     console.log('Message: ', message);
-
-    // Reset the form after submission
     setName('');
     setEmail('');
     setMessage('');
   };
 
   return (
-    <FooterContainer>
+    <footer className="bg-black text-white py-5 flex justify-center">
       <div className="container">
-        <AboutUs>
-          <h3 style={{ color: 'white' }}>About Us</h3>
-          <p>
-            We are a group of enthusiastic developers looking for the
-            opportunity to develop and provide great complete end-to-end
-            websites of almost all varieties custom-suited to your needs. We have worked on numerous sites with varities of technologies and specialize in making effective and responsive sites with user-friendly designs suitable to all your needs.
+        <div className="border-4 border-gray-600 rounded-lg p-5 mb-5">
+          <h3 className="text-3xl text-center border-4 border-gray-600 rounded-lg mb-5 px-5 py-3">About Us</h3>
+          <p className="text-lg text-gray-400 px-5 py-3">
+            We are a group of enthusiastic developers looking for the opportunity to develop and provide great complete
+            end-to-end websites of almost all varieties custom-suited to your needs. We have worked on numerous sites
+            with varities of technologies and specialize in making effective and responsive sites with user-friendly
+            designs suitable to all your needs.
           </p>
-        </AboutUs>
-        <ContactInfo>
-          <h3>Contact Us</h3>
-        </ContactInfo>
-        <ContactForm>
-          <form onSubmit={handleSubmit}>
+        </div>
+        <div className="flex items-center justify-center mb-5">
+          <h3 className="text-3xl border-4 border-gray-600 rounded-lg mb-5 px-5 py-3">Contact Us</h3>
+        </div>
+        <div>
+          <form className="max-w-2xl mx-auto text-black" onSubmit={handleSubmit}>
             <input
               type="text"
               name="name"
@@ -156,6 +50,7 @@ function Footer() {
               value={name}
               onChange={handleInputChange}
               required
+              className="block w-full border-2 border-gray-500 p-2 rounded-lg mb-3"
             />
             <input
               type="email"
@@ -164,6 +59,7 @@ function Footer() {
               value={email}
               onChange={handleInputChange}
               required
+              className="block w-full border-2 border-gray-500 p-2 rounded-lg mb-3"
             />
             <textarea
               name="message"
@@ -171,22 +67,36 @@ function Footer() {
               value={message}
               onChange={handleInputChange}
               required
+              className="block w-full border-2 border-gray-500 p-2 rounded-lg mb-3"
             ></textarea>
-            <button type="submit">Submit</button>
+            <button
+              type="submit"
+              className="bg-indigo-900 text-white border-2 border-indigo-900 rounded-lg p-2 text-lg cursor-pointer"
+            >
+              Submit
+            </button>
           </form>
-        </ContactForm>
-        <ContactInfo>
-          <a href="https://wa.me/+91-8318264953" target="_blank" rel="noopener noreferrer">
-            <img src=" https://tochat.be/whatsapp-icon-white.png" alt="WhatsApp" />
+        </div>
+        <div className="flex items-center justify-center mt-5 mb-5">
+          <a href="https://wa.me/+91-8318264953" target="_blank" rel="noopener noreferrer" className="text-white mr-10">
+            <img
+              src="https://tochat.be/whatsapp-icon-white.png"
+              alt="WhatsApp"
+              className="mr-2 w-10 h-10 inline-block"
+            />
             WhatsApp
           </a>
-          <a href="yourwebsitebuilders@gmail.com">
-            <img src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-16.png" alt="Email" />
+          <a href="yourwebsitebuilders@gmail.com" className="text-white">
+            <img
+              src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-16.png"
+              alt="Email"
+              className="mr-2 w-10 h-10 inline-block"
+            />
             Email
           </a>
-        </ContactInfo>
+        </div>
       </div>
-    </FooterContainer>
+    </footer>
   );
 }
 
