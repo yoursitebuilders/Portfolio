@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import './FAQComponent.css';
 
 const FAQComponent = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -26,17 +27,43 @@ const FAQComponent = () => {
     },
   ];
 
+  // Function to handle scroll animations
+  const handleScrollAnimation = () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item, index) => {
+      const itemTop = item.getBoundingClientRect().top;
+      const itemBottom = item.getBoundingClientRect().bottom;
+
+      if (itemTop < window.innerHeight && itemBottom > 0) {
+        item.classList.add('slide-in'); // Add slide-in animation class
+      }
+    });
+  };
+
+  // Add scroll event listener for scroll animations
+  useEffect(() => {
+    window.addEventListener('scroll', handleScrollAnimation);
+    return () => {
+      window.removeEventListener('scroll', handleScrollAnimation);
+    };
+  }, []);
+
   return (
     <div className="bg-black text-white sm:p-12 flex flex-col justify-center flex-wrap h-4/5 mt-10 mb-10 mx-5">
-      <h2 className="text-white text-center font-serif text-2xl sm:text-5xl mb-10">We’ve got the answers to your questions</h2>
+      <h2 className="text-white text-center font-serif text-2xl sm:text-5xl mb-10">
+        We’ve got the answers to your questions
+      </h2>
       {faqData.map((item, index) => (
         <div
           key={index}
-          className="border border-gray-500 rounded-lg mb-5 p-12 cursor-pointer"
+          className={`faq-item border hover:scale-105 ease-in-out duration-100 border-gray-500 rounded-lg mb-5 p-12 cursor-pointer animate-slide-up`}
           onClick={() => setOpenIndex(index === openIndex ? null : index)}
         >
           <h3 className="text-violet-500 text-center">{item.question}</h3>
-          {openIndex === index && <p className="text-gray-500 text-center font-medium">{item.answer}</p>}
+          {openIndex === index && (
+            <p className="text-gray-500 text-center font-medium">{item.answer}</p>
+          )}
         </div>
       ))}
     </div>

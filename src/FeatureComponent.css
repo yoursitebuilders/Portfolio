@@ -1,0 +1,18 @@
+/* FeatureComponent.css */
+
+/* Initial state for feature items */
+.feature-item {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Slide-in animation effect */
+  .slide-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Add additional styling for your component here as needed */
+  

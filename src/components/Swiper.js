@@ -72,7 +72,7 @@ export default () => {
         <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
       </SwiperSlide>
       <SwiperSlide>
         <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
@@ -87,7 +87,7 @@ export default () => {
         <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
       </SwiperSlide>
     </Swiper>
       </div>

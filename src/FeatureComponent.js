@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import './FeatureComponent.css'; // Create a CSS file for your component styles
 import CertificateLogo from './components/certificate.png';
 import fast from './components/quick.png';
 import price from './components/tags.png';
@@ -39,14 +41,39 @@ const FeatureComponent = () => {
     },
   ];
 
+  useEffect(() => {
+    const featureItems = document.querySelectorAll('.feature-item');
+
+    function handleScroll() {
+      featureItems.forEach((item, index) => {
+        const itemTop = item.getBoundingClientRect().top;
+        const itemBottom = item.getBoundingClientRect().bottom;
+
+        if (itemTop < window.innerHeight && itemBottom > 0) {
+          item.classList.add('slide-in'); // Add your CSS class for the slide-in animation
+        }
+      });
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="bg-black w-[100%]  text-gray-300 sm:p-20 sm:mx-5 ">
+    <div className="bg-black w-[100%] text-gray-300 sm:p-20 sm:mx-5">
       <h2 className="text-white text-center font-sarif text-2xl sm:text-5xl mb-10">Why you'll love us</h2>
       <div className="flex flex-wrap">
         {featureData.map((item, index) => (
-          <div key={index} className="sm:w-1/2 flex flex-wrap   p-5">
+          <div key={index} className="hover:scale-105 ease-in-out duration-100 sm:w-1/2 flex flex-wrap p-5 feature-item">
             <div className="border border-white rounded-lg h-full p-5 flex flex-col items-center">
-              <img src={item.logo} alt={`Logo${index + 1}`} className="w-10 h-10 mb-3" />
+              <img
+                src={item.logo}
+                alt={`Logo${index + 1}`}
+                className={`w-10 h-10 mb-3 ${index % 3 === 0 ? 'animate-bounce' : 'animate-pulse'}`}
+              />
               <h3 className="text-purple-600 text-lg font-bold mb-2">{item.title}</h3>
               <p className="text-base">{item.description}</p>
             </div>

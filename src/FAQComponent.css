@@ -1,0 +1,13 @@
+/* FAQComponent.css */
+.faq-item {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.5s, transform 1s;
+  }
+  
+  .slide-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 1s;
+  }
+  
