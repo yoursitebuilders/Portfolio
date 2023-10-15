@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Footer() {
+function Footer({contactSectionRef}) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -27,7 +27,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-black text-white py-5 flex justify-center">
+    <footer className="bg-black p-5 text-white py-5 flex justify-center">
       <div className="container">
         <div className="border-4 border-gray-600 rounded-lg p-5 mb-5">
           <h3 className="text-3xl text-center border-4 border-gray-600 rounded-lg mb-5 px-5 py-3">About Us</h3>
@@ -41,7 +41,7 @@ function Footer() {
         <div className="flex items-center justify-center mb-5">
           <h3 className="text-3xl border-4 border-gray-600 rounded-lg mb-5 px-5 py-3">Contact Us</h3>
         </div>
-        <div>
+        <div ref={contactSectionRef} id="contact">
           <form className="max-w-2xl mx-auto text-black" onSubmit={handleSubmit}>
             <input
               type="text"

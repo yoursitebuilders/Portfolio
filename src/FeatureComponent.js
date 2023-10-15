@@ -40,11 +40,11 @@ const FeatureComponent = () => {
   ];
 
   return (
-    <div className="bg-black text-gray-300 p-20 mx-5">
-      <h2 className="text-white text-center text-5xl mb-10">Why you'll love us</h2>
+    <div className="bg-black w-[100%]  text-gray-300 sm:p-20 sm:mx-5 ">
+      <h2 className="text-white text-center font-sarif text-2xl sm:text-5xl mb-10">Why you'll love us</h2>
       <div className="flex flex-wrap">
         {featureData.map((item, index) => (
-          <div key={index} className="w-1/2 p-5">
+          <div key={index} className="sm:w-1/2 flex flex-wrap   p-5">
             <div className="border border-white rounded-lg h-full p-5 flex flex-col items-center">
               <img src={item.logo} alt={`Logo${index + 1}`} className="w-10 h-10 mb-3" />
               <h3 className="text-purple-600 text-lg font-bold mb-2">{item.title}</h3>

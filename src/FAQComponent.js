@@ -27,8 +27,8 @@ const FAQComponent = () => {
   ];
 
   return (
-    <div className="bg-black text-white p-12 flex flex-col justify-center flex-wrap h-4/5 mt-10 mb-10 mx-5">
-      <h2 className="text-white text-center text-5xl mb-10">We’ve got the answers to your questions</h2>
+    <div className="bg-black text-white sm:p-12 flex flex-col justify-center flex-wrap h-4/5 mt-10 mb-10 mx-5">
+      <h2 className="text-white text-center font-serif text-2xl sm:text-5xl mb-10">We’ve got the answers to your questions</h2>
       {faqData.map((item, index) => (
         <div
           key={index}

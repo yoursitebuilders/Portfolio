@@ -19,11 +19,11 @@ const HeroBg = () => {
    <div></div> 
    <TbTournament className='h-[50px] w-[50px] text-gray-700 rotate-[-45deg]'/>
    <div></div>
-   <GiInvertedDice5 className='h-[150px] w-[150px] text-gray-700 rotate-[-45deg]'/>
-   <GiHotMeal className='h-[100px] w-[100px] text-gray-700 rotate-[-45deg]'/>
+   <GiInvertedDice5 className='h-[150px] hidden sm:visible w-[150px] text-gray-700 rotate-[-45deg]'/>
+   <GiHotMeal className='h-[100px] w-[100px] hidden sm:visible text-gray-700 rotate-[-45deg]'/>
    <div className='h-[150px]  w-[150px] text-gray-700 rotate-[-45deg]'/>
    <div></div>
-   <GiHamburger className='h-[100px] w-[100px] text-gray-700 rotate-[-45deg]'/>
+   <GiHamburger className=' hidden sm:visible h-[100px] w-[100px] text-gray-700 rotate-[-45deg]'/>
 
 
    

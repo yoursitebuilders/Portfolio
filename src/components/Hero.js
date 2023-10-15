@@ -8,6 +8,7 @@ const Hero = () => {
  
  const text="Crafting Digital Identities, One Website at a Time"
     
+ 
   
 
 
@@ -34,7 +35,7 @@ const Hero = () => {
    
 
 
-    <div className=' flex h-[200vh] z-20 bg-transparent w-[80%] flex-col justify-between m-auto'>
+    <div className=' flex sm:h-[200vh] h-[150vh] z-20 bg-transparent w-[80%] flex-col justify-between m-auto'>
     {/* left */}
     <div className='flex  flex-col justify-around w-[100%] h-[100vh]   py-[100px]' >
 
@@ -42,7 +43,7 @@ const Hero = () => {
 
     {/* for cursive test */}
 
-    <div className='text-purple-500 z-30 text-[40px] italic font-medium'>
+    <div className='text-white z-30 text-[20px] sm:text-[40px] italic font-medium'>
 
     Want websites according to your custom needs then you are at right destination
     </div>
@@ -51,7 +52,7 @@ const Hero = () => {
 
       <div className='justify-start flex'>
 
-      <div className='font-serif z-30 leading-10 text-center border-[2px] border-gray-400 justify-start flex p-3 text-[20px] text-white'>
+      <div className='font-serif z-30 sm:leading-10 leading-6 text-center border-[2px] rounded-[2px_20px] sm:mt-0 mt-2 border-gray-400 justify-start flex p-3 text-[15px] sm:text-[20px] text-white'>
 
       We specialize in creating custom-designed, responsive websites tailored to meet your unique business requirements. Our team of experienced developers is dedicated to delivering user-friendly, visually appealing websites that reflect your brand's essence.
       </div>
@@ -64,7 +65,7 @@ const Hero = () => {
 
     {/* right */}
 
-    <div className='flex  w-[105%] h-[100vh] rounded-[10px] justify-center items-center ' >
+    <div className='flex  -translate-x-6 sm:translate-x-0 w-[120%]   sm:w-[105%] h-[100vh] rounded-[10px] justify-center items-center ' >
 
     {/* <Video/> */}
 

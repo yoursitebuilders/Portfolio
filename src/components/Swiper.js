@@ -33,7 +33,67 @@ function SlideNextButton() {
 
 export default () => {
   return (
-    <Swiper
+
+    <div className='w-[100%] h-[100%]'>
+      <div className=' visible block sm:hidden w-[100%] h-[100%]'>
+ <Swiper
+      className=''
+      // install Swiper modules
+      effect="coverflow"
+      modules={[Navigation, FreeMode, Autoplay, Pagination, EffectCoverflow, Scrollbar, A11y]}
+      spaceBetween={5}
+      slidesPerView={1}
+      slideShadows={true}
+      loop={true}
+      loopAdditionalSlides={1}
+      speed={800}
+      freeMode={true}
+      // autoplay={true}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
+      navigation
+      pagination={{ clickable: true }}
+      // scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
+      </SwiperSlide>
+    </Swiper>
+      </div>
+
+      <div className=' sm:visible sm:block w-[100%] h-[100%] hidden'>
+ <Swiper
       className=''
       // install Swiper modules
       effect="coverflow"
@@ -87,5 +147,8 @@ export default () => {
         <img className='w-[400px] h-[400px] rounded-[10px]' src={img5} />
       </SwiperSlide>
     </Swiper>
+      </div>
+    </div>
+   
   );
 };
