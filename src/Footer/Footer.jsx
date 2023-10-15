@@ -86,6 +86,7 @@ function Footer() {
             />
             WhatsApp
           </a>
+          <div></div>
           <a href="yourwebsitebuilders@gmail.com" className="text-white">
             <img
               src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-16.png"
