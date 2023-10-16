@@ -27,6 +27,7 @@ function App() {
       <Navbar contactSectionRef={contactSectionRef}  scrollToContactSection={scrollToContactSection}/>
       <Hero/>
       <OwerView/>
+      
       <FeatureComponent/>
       <FAQComponent/>
       <div  >

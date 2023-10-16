@@ -19,17 +19,17 @@ const Hero = () => {
   }, []);
 
   const parallaxTranslate = (value) => {
-    return `translateY(${value * 0.2}px)`;
+    return `translateY(${value * .2}px)`;
   };
 
   return (
-    <div className="relative w-[100%] h-[100%] mb-[50vh]">
+    <div className="relative  w-[100%] h-[100%] mb-[50vh]">
       <div className="absolute z-10 text-yellow-100 w-[100%] flex justify-center items-start h-[100%]">
         <HeroBg />
       </div>
-      <div className={`flex sm:h-[200vh] h-[150vh] z-20 bg-transparent w-[80%] flex-col justify-between m-auto scroll-${scrollPosition}`}>
+      <div className={`flex  sm:h-[200vh] h-[150vh] z-20 bg-transparent w-[80%] flex-col justify-between m-auto scroll-${scrollPosition}`}>
         <div className="flex flex-col justify-around w-[100%] h-[100vh] py-[100px]">
-          <div className="text-white z-30 text-[20px] sm:text-[40px] italic font-medium" style={{ transform: parallaxTranslate(scrollPosition) }}>
+          <div className="text-white z-40 text-[20px] sm:text-[40px] italic font-medium" style={{ transform: parallaxTranslate(scrollPosition) }}>
             Want websites according to your custom needs then you are at the right destination
           </div>
           <div className="justify-start flex">

@@ -15,7 +15,7 @@ const HeroBg = () => {
 
 
     
-   <GiLaptop className='h-[100px] -z-40 w-[100px] text-gray-700 rotate-[-45deg]'/>
+   <GiLaptop className='h-[100px] -z-50 w-[100px] text-gray-700 hidden sm:visible sm:block  rotate-[-45deg]'/>
    <div></div> 
    <TbTournament className='h-[50px] w-[50px] text-gray-700 rotate-[-45deg]'/>
    <div></div>

@@ -63,7 +63,7 @@ const FeatureComponent = () => {
   }, []);
 
   return (
-    <div className="bg-black w-[100%] text-gray-300 sm:p-20 sm:mx-5">
+    <div className="bg-black w-[100%] text-gray-300 sm:p-20 sm:mt-0 -mt-[80vh] sm:mx-5">
       <h2 className="text-white text-center font-sarif text-2xl sm:text-5xl mb-10">Why you'll love us</h2>
       <div className="flex flex-wrap">
         {featureData.map((item, index) => (

@@ -34,7 +34,7 @@ function SlideNextButton() {
 export default () => {
   return (
 
-    <div className='w-[100%] h-[100%]'>
+    <div className='w-[100%] h-[100%] sm:mt-0 -mt-[100vh]'>
       <div className=' visible block sm:hidden w-[100%] h-[100%]'>
  <Swiper
       className=''
@@ -43,6 +43,7 @@ export default () => {
       modules={[Navigation, FreeMode, Autoplay, Pagination, EffectCoverflow, Scrollbar, A11y]}
       spaceBetween={5}
       slidesPerView={1}
+      
       slideShadows={true}
       loop={true}
       loopAdditionalSlides={1}
@@ -50,7 +51,7 @@ export default () => {
       freeMode={true}
       // autoplay={true}
       autoplay={{
-        delay: 1000,
+        delay: 800,
         disableOnInteraction: false,
       }}
       navigation
@@ -59,35 +60,45 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+       <SwiperSlide>
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387034/medical1_lhrswt.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img1} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387151/restourant_v7vsgo.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img2} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387138/tourism_j6jjb0.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img3} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387404/edtech_xxifcw.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img4} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387034/medical1_lhrswt.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img1} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img1} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387151/restourant_v7vsgo.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img2} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img2} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387138/tourism_j6jjb0.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img3} />
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img3} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img className='w-[400px] h-[400px] rounded-[10px]' src={img4} />
+        <a href="https://res.cloudinary.com/dgavvinnd/video/upload/v1697387404/edtech_xxifcw.mp4" target="_blank" rel="noopener noreferrer">
+          <img className='w-[400px] h-[250px] rounded-[10px]' src={img4} />
+        </a>
       </SwiperSlide>
     </Swiper>
       </div>
@@ -107,7 +118,7 @@ export default () => {
       freeMode={true}
       // autoplay={true}
       autoplay={{
-        delay: 100,
+        delay: 800,
         disableOnInteraction: false,
       }}
       navigation
