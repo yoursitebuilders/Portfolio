@@ -28,7 +28,7 @@ const Navbar = ({scrollToContactSection,contactSectionRef}) => {
   
 
         
-           <button onClick={()=>scrollToContactSection()} className='sm:scale-0 scale-75  bg-gradient-animation z-20 duration-500 text-black rounded-[20px] text-bold font-bold bg-yellow-500   sm:px-10   px-2 py-2  hover:bg-white   uppercase'>Contact Us</button>
+           <button onClick={()=>scrollToContactSection()} className='sm:scale-100 scale-75  bg-gradient-animation z-20 duration-500 text-black rounded-[20px] text-bold font-bold bg-yellow-500   sm:px-10   px-2 py-2  hover:bg-white   uppercase'>Contact Us</button>
  
          
 

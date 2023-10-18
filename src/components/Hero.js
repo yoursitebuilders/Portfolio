@@ -33,7 +33,7 @@ const Hero = () => {
             Want websites <span className='text-yellow-400 font-pixelify '>according to your custom needs</span> then you are at the right destination
           </div>
           <div className="justify-start flex">
-            <div className="font-mono z-30 sm:leading-10 leading-6 text-center border-[2px] rounded-[2px_25px] sm:mt-0 mt-7 border-gray-400 justify-start flex p-3 text-[15px]  sm:text-[20px] text-white" style={{ transform: parallaxTranslate(scrollPosition) }}>
+            <div className="font-mono z-30 sm:leading-10 leading-10 text-center border-[2px] rounded-[2px_25px] sm:mt-0 mt-7 border-gray-400 justify-start flex p-3 text-[15px] sm:py-0   sm:text-[20px] text-white" style={{ transform: parallaxTranslate(scrollPosition) }}>
               We specialize in creating custom-designed, responsive websites tailored to meet your unique business requirements.
             </div>
           </div>
