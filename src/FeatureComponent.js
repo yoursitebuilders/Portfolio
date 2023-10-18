@@ -63,7 +63,7 @@ const FeatureComponent = () => {
   }, []);
 
   return (
-    <div className="bg-black w-[100%] text-gray-300 sm:p-20 sm:mt-0 -mt-[80vh] sm:mx-5">
+    <div className="bg-black w-[100%]   text-gray-300 sm:p-20 sm:mt-0 -mt-[80vh] ">
       <h2 className="text-white text-center font-sarif text-2xl sm:text-5xl mb-10">Why you'll love us</h2>
       <div className="flex flex-wrap">
         {featureData.map((item, index) => (
@@ -74,7 +74,7 @@ const FeatureComponent = () => {
                 alt={`Logo${index + 1}`}
                 className={`w-10 h-10 mb-3 ${index % 3 === 0 ? 'animate-bounce' : 'animate-pulse'}`}
               />
-              <h3 className="text-purple-600 text-lg font-bold mb-2">{item.title}</h3>
+              <h3 className="text-yellow-400 text-lg font-bold mb-2">{item.title}</h3>
               <p className="text-base">{item.description}</p>
             </div>
           </div>

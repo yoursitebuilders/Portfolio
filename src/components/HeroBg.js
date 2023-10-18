@@ -11,7 +11,7 @@ import { GiHamburger } from "react-icons/gi";
 
 const HeroBg = () => {
   return (
-    <div className='mt-[20px] w-[100%] h-[50%] flex justify-center gap-[200px] flex-wrap items-center gap-y-[300px]'>
+    <div className='mt-[1px] w-[100%] h-[50%] flex justify-center  gap-[200px] flex-wrap  items-center gap-y-[300px]'>
 
 
     

@@ -57,10 +57,10 @@ const FAQComponent = () => {
       {faqData.map((item, index) => (
         <div
           key={index}
-          className={`faq-item border hover:scale-105 ease-in-out duration-100 border-gray-500 rounded-lg mb-5 p-12 cursor-pointer animate-slide-up`}
+          className={`faq-item border hover:scale-105 font-bold ease-in-out duration-100 border-white-500 rounded-lg mb-5 p-12 cursor-pointer animate-slide-up`}
           onClick={() => setOpenIndex(index === openIndex ? null : index)}
         >
-          <h3 className="text-violet-500 text-center">{item.question}</h3>
+          <h3 className="text-yellow-400 text-center">{item.question}</h3>
           {openIndex === index && (
             <p className="text-gray-500 text-center font-medium">{item.answer}</p>
           )}

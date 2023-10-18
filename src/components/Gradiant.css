@@ -1,22 +1,33 @@
 @keyframes changeGradient {
-    0% {
-        background: linear-gradient(45deg, #6f71df, #442fdf);
-      }
-      25% {
-        background: linear-gradient(45deg, #6b55e6, #272ae0);
-      }
-      50% {
-        background: linear-gradient(45deg, #3e37f0, #b6bdec);
-      }
-      75% {
-        background: linear-gradient(45deg, #6c70b3, #594a94);
-      }
-      100% {
-        background: linear-gradient(45deg, #7e7edc, #e0b5d9);
-      }
+  0% {
+    background: linear-gradient(90deg, #d3c824, #e3d61e);
   }
+  25% {
+    background: linear-gradient(90deg, #a2a804, #d7c826);
+  }
+  50% {
+    background: linear-gradient(90deg, #aac60b, #e0d863);
+  }
+  75% {
+    background: linear-gradient(90deg, #d2cc1f, #e6be1e);
+  }
+  100% {
+    background: linear-gradient(90deg, #d5c517, #e4e41e);
+  }
+}
+
   
   .gradient-animation {
     animation: changeGradient 2s linear infinite ;
   }
+
+  /* Replace 'path/to/pixelify-sans.woff' with the actual path to your font file */
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url('../../Pixelify_Sans/Pacifico-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
   

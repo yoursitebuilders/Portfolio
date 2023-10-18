@@ -1,23 +1,36 @@
 import React from 'react'
-import logo from "./tailwind4523 (2).jpg"
+import logo from "./logo1.png"
 import './Gradiant.css'
 // import useref from 'useref'
 const Navbar = ({scrollToContactSection,contactSectionRef}) => {
   return (
     
-    <div className='sm:mb-0 -mb-3 flex font-medium w-[80%]   justify-between m-auto border-gray-300 border-b-2' >
+    <div className='sm:mb-0 -mb-3 flex font-medium sm:w-[90%] w-[90%] p-4   justify-between m-auto  ' >
     <div>
-    <img src={logo} className='sm:w-[150px] w-[100px] ' alt='logo'/>
+    {/* <img src={logo} className='sm:w-[80px] w-[50px] h-[50px] ' alt='logo'/> */}
+
+    <div className='text-white  font-pixelify  text-[22px]'>
+
+    <div className="-translate-x-[20px]  ">
+      Site
+    </div>
+    <div className='-mt-[7px]'>
+      Builders
+    </div>
+       
 
     </div>
 
-    <div className='flex  items-center '>
-       
+    </div>
 
+    <div className='flex  items-center  '>
+       
+  
 
         
-           <button onClick={()=>scrollToContactSection()} className='hover:bg-violet-600 gradient-animation text-white rounded-md text-bold font-bold bg-violet-500 border-b-violet-950 border-r-violet-950 border-solid border-2 sm:px-10  px-1 py-1 hover:scale-110 uppercase'>Contact Us</button>
-
+           <button onClick={()=>scrollToContactSection()} className='sm:scale-0 scale-75  bg-gradient-animation z-20 duration-500 text-black rounded-[20px] text-bold font-bold bg-yellow-500   sm:px-10   px-2 py-2  hover:bg-white   uppercase'>Contact Us</button>
+ 
+         
 
             
         
