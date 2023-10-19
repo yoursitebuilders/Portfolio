@@ -7,6 +7,8 @@ import Footer from './Footer/Footer';
 import FAQComponent from './FAQComponent';
 import FeatureComponent from './FeatureComponent'
 import { useRef } from 'react';
+import { ToastContainer } from 'react-toastify';
+
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
       <div  >
        <Footer contactSectionRef={contactSectionRef} />
       </div>
+      <ToastContainer />
+      
 
      
     </div>
