@@ -5,7 +5,7 @@ import './Gradiant.css'
 const Navbar = ({scrollToContactSection,contactSectionRef}) => {
   return (
     
-    <div className='sm:mb-0 -mb-3 flex font-medium sm:w-[90%] w-[90%] p-4   justify-between m-auto  ' >
+    <div className=' sm:mb-0 bg-black z-50 sticky top-0 -mb-3 flex font-medium sm:w-[100%] w-[100%] px-6 py-4  justify-between m-auto  ' >
     <div>
     {/* <img src={logo} className='sm:w-[80px] w-[50px] h-[50px] ' alt='logo'/> */}
 

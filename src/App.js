@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <div className="App bg-black ">
+    <div className="App bg-black relative ">
       <Navbar contactSectionRef={contactSectionRef}  scrollToContactSection={scrollToContactSection}/>
       <Hero/>
       <OwerView/>

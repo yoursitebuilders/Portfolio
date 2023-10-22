@@ -46,7 +46,7 @@ function Footer({contactSectionRef}) {
          
         </div>
         <div className="flex items-center justify-center mt-5 mb-5">
-          <a href="https://wa.me/+91-7355232730" target="_blank" rel="noopener noreferrer" className="text-white mr-10">
+          <a href="https://wa.me/+918858751634" target="_blank" rel="noopener noreferrer" className="text-white mr-10">
             <img
               src="https://tochat.be/whatsapp-icon-white.png"
               alt="WhatsApp"
@@ -55,7 +55,7 @@ function Footer({contactSectionRef}) {
             WhatsApp
           </a>
           <div></div>
-          <a href="yoursitebuilders@gmail.com" target="_blank"  className="text-white">
+          <a href="mailto:yoursitebuilders@gmail.com" target="_blank"  className="text-white">
             <img
               src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-16.png"
               alt="Email"
